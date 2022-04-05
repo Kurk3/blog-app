@@ -5,9 +5,8 @@
     <title>Kurek's Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/static/styles/styles.css">
-    <script src="jquery-3.5.1.min.js"></script>
-    <!-- create script that links to jquery -->
     <script src="/static/javascript/scripts.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -15,7 +14,7 @@
 <div class="navbar">
     <ul class="navbar-elements">
         <li><a href="https://www.youtube.com/channel/UCD-CPINIYEuWeQyxONcqXrA">Youtube</a></li>
-        <li><a href="/blog" >Categories</a></li>
+        <li><a href="/blog">Categories</a></li>
         <li><a href="/contact_me">Contact</a></li>
         <li><a href="http://www.adamkurek.com/">Portfolio</a></li>
     </ul>
@@ -44,20 +43,22 @@
             <h2 class="underline">Category: </h2>
         </div>
         <div class="categories-grid">
-            <div class="card">
-                <div class="category">
-                    <img class="img-icon" src="/static/images/icons%20/dumbell.png">
-                    <div class="align-center">
-                        <h1>Health & Fitness</h1>
-                        <p>This will be short description how it should look like...</p>
-                    </div>
-                    <div class="align-right">
-                        <img class="image" src="/static/images/img.png">
+
+                <div class="card">
+                    <div class="category" id="category-fitness">
+                        <img class="img-icon" src="/static/images/icons%20/dumbell.png">
+                        <div class="align-center">
+                            <h1>Health & Fitness</h1>
+                            <p>This will be short description how it should look like...</p>
+                        </div>
+                        <div class="align-right">
+                            <img class="image" src="/static/images/img.png">
+                        </div>
                     </div>
                 </div>
-            </div>
+
             <div class="card">
-                <div class="category">
+                <div class="category" id="category-productivity">
                     <img class="img-icon-productivity" src="/static/images/icons%20/productivity.png">
                     <div class="align-center">
                         <h1>Productivity</h1>
@@ -69,7 +70,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="category">
+                <div class="category" id="category-webdevelopment">
                     <img class="img-icon-webdevelopment" src="/static/images/icons%20/development.png">
                     <div class="align-center">
                         <h1>Web development</h1>
@@ -81,7 +82,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="category">
+                <div class="category" id="category-hobbies">
                     <img class="img-icon-hobby" src="/static/images/icons%20/hobby.png">
                     <div class="align-center">
                         <h1>Hobbies</h1>
@@ -93,7 +94,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="category">
+                <div class="category" id="category-finances">
                     <img class="img-icon-finances" src="/static/images/icons%20/finances.png">
                     <div class="align-center">
                         <h1>Finances</h1>
@@ -105,7 +106,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="category">
+                <div class="category" id="category-learning">
                     <img class="img-icon-learning" src="/static/images/icons%20/learning.png">
                     <div class="align-center">
                         <h1>Learning</h1>
@@ -132,6 +133,47 @@
 
 
 </body>
+
+<script>
+    //create a function that will redirect when div class card is clicked to the contact_me route
+    // $(".card").click(function () {
+     //   window.location.href = "/contact_me";
+   // });
+
+    // create a function that will redirect when id with category-fitness is clicked to the contact_me route
+
+    $("#category-fitness").click(function () {
+        window.location.href = "/fitness";
+    });
+
+    $("#category-productivity").click(function () {
+        window.location.href = "/productivity";
+    });
+
+    $("#category-webdevelopment").click(function () {
+        window.location.href = "/web_development";
+    });
+
+    $("#category-hobbies").click(function () {
+        window.location.href = "/hobby";
+    });
+
+    $("#category-finances").click(function () {
+        window.location.href = "/finances";
+    });
+
+    $("#category-learning").click(function () {
+        window.location.href = "/learning";
+    });
+
+    //create slow scroll animation to the section with class grid-section
+
+
+
+
+
+
+</script>
 
 
 </html>
