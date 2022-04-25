@@ -51,13 +51,17 @@ def productivity_5():
 def web_dev_main():
     return render_template('blog_categories/Web/choose_blog_webdev.html')
 
+
+
 @app.route('/web_development/blog_1')
 def web_development_1():
     return render_template('specific_blogs/WebDevelopment/blog_webdev_1.html')
 
+
 @app.route('/web_development/blog_2')
 def web_development_2():
     return render_template('specific_blogs/WebDevelopment/blog_webdev_2.html')
+
 
 @app.route('/web_development/blog_3')
 def web_development_3():
