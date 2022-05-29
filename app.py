@@ -5,26 +5,25 @@ app = Flask(__name__)
 ###################################################################################
 # Hlavne #######################################################################
 
-
 @app.route('/')
 @app.route('/blog')
 def main_page():  # put application's code here
     return render_template('categories_intro_page_contact.html')
-
 
 @app.route('/contact_me')
 def contact_me():
     return render_template('contact_me.html')
 
 
-
+@app.route('/roadmap')
+def roadmap():
+    return render_template('specific_blogs/learning_path.html')
 
 ###################################################################################
 # kategorie #######################################################################
 @app.route('/productivity')
 def productivity_main():
     return render_template('blog_categories/Productivity/choose_blog_productivity.html')
-
 
 @app.route('/productivity/blog_1')
 def productivity_1():
@@ -51,17 +50,13 @@ def productivity_5():
 def web_dev_main():
     return render_template('blog_categories/Web/choose_blog_webdev.html')
 
-
-
 @app.route('/web_development/blog_1')
 def web_development_1():
     return render_template('specific_blogs/WebDevelopment/blog_webdev_1.html')
 
-
 @app.route('/web_development/blog_2')
 def web_development_2():
     return render_template('specific_blogs/WebDevelopment/blog_webdev_2.html')
-
 
 @app.route('/web_development/blog_3')
 def web_development_3():
@@ -155,8 +150,13 @@ def learning_4():
 def learning_5():
     return render_template('specific_blogs/Learning/blog_learning_5.html')
 
+@app.route('/learning/blog_6')
+def learning_6():
+    return render_template('specific_blogs/Learning/blog_learning_6.html')
 
-
+@app.route('/learning/blog_7')
+def learning_7():
+    return render_template('specific_blogs/Learning/blog_learning_7.html')
 
 
 

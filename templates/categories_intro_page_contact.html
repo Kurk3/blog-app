@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/static/styles/styles.css">
     <script src="/static/javascript/scripts.js"></script>
     <script src="/static/javascript/script.js"></script>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -45,18 +45,18 @@
         </div>
         <div class="categories-grid">
 
-                <div class="card">
-                    <div class="category" id="category-fitness">
-                        <img class="img-icon" src="/static/images/icons%20/dumbell.png">
-                        <div class="align-center">
-                            <h1>Health & Fitness</h1>
-                            <p>This will be short description how it should look like...</p>
-                        </div>
-                        <div class="align-right">
-                            <img class="image" src="/static/images/img.png">
-                        </div>
+            <div class="card">
+                <div class="category" id="category-fitness">
+                    <img class="img-icon" src="/static/images/icons%20/dumbell.png">
+                    <div class="align-center">
+                        <h1>Health & Fitness</h1>
+                        <p>This will be short description how it should look like...</p>
+                    </div>
+                    <div class="align-right">
+                        <img class="image" src="/static/images/img.png">
                     </div>
                 </div>
+            </div>
 
             <div class="card">
                 <div class="category" id="category-productivity">
@@ -121,6 +121,19 @@
         </div>
     </div>
 
+
+    <section class="roadmap-section">
+        <div class="roadmap-header">
+            <h2>Roadmap</h2>
+            <h2 class="underline"></h2>
+        </div>
+        <a href="/roadmap">
+            <div class="roadmap-card">
+                <h3>How I learned to code</h3>
+            </div>
+        </a>
+    </section>
+
     <div class="background-images">
         <div class="square-1-left"></div>
         <div class="square-2-right"></div>
@@ -138,8 +151,8 @@
 <script>
     //create a function that will redirect when div class card is clicked to the contact_me route
     // $(".card").click(function () {
-     //   window.location.href = "/contact_me";
-   // });
+    //   window.location.href = "/contact_me";
+    // });
 
     // create a function that will redirect when id with category-fitness is clicked to the contact_me route
 
@@ -168,10 +181,6 @@
     });
 
     //create slow scroll animation to the section with class grid-section
-
-
-
-
 
 
 </script>
